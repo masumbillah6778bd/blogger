@@ -1,0 +1,350 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+
+.content-box {
+  background-image: url("im/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 98%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*============================= Lyrics Content =============================*/
+  
+.content-box .content {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 715px;
+  height: calc(100% - 80px);
+  heigh: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  z-index: 9;
+  border: 2px solid red;
+  border-radius: 20px;
+  
+  /*background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 800px;
+  height: calc(100% - 80px);
+  margin: 2px auto;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  z-index: 9;
+  border: 2px solid red;
+  border-radius: 20px;*/
+}
+
+.content-box .content .lyrics {
+  height: 300px;
+  padding: 10px 0;
+  margin: 0 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.content-box .content .lyrics>div {
+  color: pink;
+  position: relative;
+  font-size: 30px;
+  ont-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  line-height: 80px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.content-box .content .lyrics>div.highlighted {
+  color: yellow;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*============================= Player Box =============================*/
+  
+.content-box .player {
+  background-color: yellow;
+  color: #000;
+  width: 100%;
+  height: 140px;
+  argin: 0px 10px 10px;
+  z-index: 10;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  outline: none;
+  border: 2px solid green;
+  border-radius: 30px 0 30px 0;
+}
+
+.content-box .player .left {
+  width: 200px;
+  margin: 5px;
+}
+  
+.content-box .player .left img {
+  width: 100%;
+  padding: 0px;
+  object-fit: cover;
+  border: 2px solid green;
+  border-top-left-radius: 30px;
+}
+
+.content-box .player .right {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.content-box .player .right .top {
+  padding-left: 10px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+  
+/*============================= P =============================*/
+  
+.content-box .player .songs {
+  margin: 0px;
+  padding: 5px;
+  line-height: 30px;
+}
+
+.content-box .player p {
+  color: black;
+  font-size: 20px;
+  font-family: 'solaiman-lipi', times;
+}
+
+.content-box .player p::first-line {
+  color: red;
+  font-size: 30px;
+  font-family: 'shokun-tola', times;
+}
+
+.content-box  .player .right .bottom {
+  display: -webkit-box;
+  display: flex;
+}
+
+/*============================= Player Controls =============================*/
+  
+.content-box .player .right .bottom video {
+  background-color: red;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  margin: 0px 20px 10px 0px;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-panel {
+  background: red;
+  width: 100%;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-play-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-play-button:hover {
+  background-color: cyan;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-current-time-display {
+  color: White;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-time-remaining-display {
+  color: Yellow;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+    
+.content-box .player .right .bottom video::-webkit-media-controls-timeline {
+  background-color: Blue;
+  margin: 10px;
+  border-radius: ;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-volume-slider {
+  background-color: green;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-box .player .right .bottom video::-webkit-media-controls-mute-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .content-box {
+    background-image: url("im/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .content-box .content {
+    /*ackground-color: #ffaa71;
+    width: 100%;
+    max-width: 400px;
+    height: 500px;*/
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 330px;
+    height: calc(100% - 80px);
+    margin: 2px auto;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    z-index: 9;
+    border: 2px solid red;
+    border-radius: 20px;
+  }
+  
+  .content-box .content .lyrics {
+    /*padding: 10px 0;
+    margin: 0 20px;
+    text-align: center;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    position: relative;*/
+    
+    width: calc(100% - 40px);
+    height: 300px;
+    min-height: calc(100vh - 80px);
+    margin: 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    position: relative;
+    word-wrap: break-word;
+    font-size: 20px;
+  }
+  
+  .content-box .content .lyrics>div {
+    /*color: pink;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: ;
+    line-height: 30px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;*/
+    
+    color: rgb(47,79,79);
+    position: relative;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: old;
+    -webkit-transition: all 0.25s;
+    word-wrap: break-word;
+    transition: all 0.25s;
+  }
+  
+  .content-box .content .lyrics>div.highlighted {
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    word-wrap: break-word;
+  }
+  
+  .content-box .player {
+    background-color: yellow;
+    width: 100%;
+    height: 140px;
+    margin: 5px 0px;
+    border-radius: 10px;
+  }
+  
+  .content-box .player .left {
+    width: 100px;
+  }
+  
+  .content-box .player .left img {
+    width: 100%;
+    height: 120px;
+  }
+  
+  .content-box .player p {
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'solaiman-lipi', times;
+  }
+  
+  .content-box .player p::first-line {
+    color: red;
+    font-size: 25px;
+    font-family: 'shokun-tola', times;
+  }
+  
+  .content-box .player .right .bottom video {
+    background-color: blue;
+    width: 200px;
+    margin: 0px 5px 10px 0px;
+  }
+  
+  .content-box .player .right .bottom video::-webkit-media-controls-panel {
+    background: blue;
+  }
+}
